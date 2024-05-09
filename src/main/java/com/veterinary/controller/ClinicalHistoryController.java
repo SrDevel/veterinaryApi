@@ -33,12 +33,12 @@ public class ClinicalHistoryController {
     public ResponseEntity<ClinicalHistoryDto> getClinicalHistory(@RequestParam Long id){
         try {
             if (id == null) {
-                return ResponseEntity.ok().build();
+                return ResponseEntity.notFound().build();
             } else {
                 return ResponseEntity.ok(clinicalHistoryService.getClinicalHistory(id));
             }
         } catch (Exception e) {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.badRequest().build();
         }
     }
 

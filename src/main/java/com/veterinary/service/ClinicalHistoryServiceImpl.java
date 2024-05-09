@@ -2,7 +2,6 @@ package com.veterinary.service;
 
 import com.veterinary.dto.ClinicalHistoryDto;
 import com.veterinary.mapper.ClinicalHistoryMapper;
-import com.veterinary.models.ClinicalHistory;
 import com.veterinary.repository.ClinicalHistoryRepository;
 
 import lombok.RequiredArgsConstructor;
